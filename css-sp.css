@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/* ********************************************************************-
+Date:2018-10-08
+SCSS Document:新着アイテム一覧 レイアウトスタイルシート(SP)
+
+ - ******************************************************************** */
+[data-cat$="sp"],
+.sp {
+  display: block !important;
+}
+
+.trace-box {
+  padding: 0 0 7px 10px;
+}
+.trace-box * {
+  font-size: 0.75rem;
+}
+
+.backlink {
+  display: none;
+}
+
+.footer__link {
+  font-size: 12px;
+}
+
+/* ページ共通 */
+#totop {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background: #b7b695;
+  border-radius: 3px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  opacity: 0.8;
+}
+#totop a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#totop a:visited, #totop a:link {
+  text-decoration: none;
+  color: #fff;
+}
+#totop a i {
+  font-size: 20px;
+  color: #FFF;
+}
+#totop a span {
+  display: block;
+  font-size: 9px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+#colorbox #cboxWrapper #cboxContent {
+  margin: 0;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent {
+  padding: 15px;
+  background-image: url("assets/image/noise.png"), linear-gradient(to right, rgba(242, 242, 242, 0.1), rgba(242, 242, 242, 0.1));
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv {
+  position: relative;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv .qv__img {
+  margin: 0 0 15px;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv .qv__img.img {
+  width: 100%;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv .qv__img.img img {
+  width: 100%;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv .qv__info.info .info__brand {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv .qv__info.info .info__item {
+  margin: 0 0 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv .qv__info.info .info__explain {
+  margin: 0 0 30px;
+  line-height: 1.4em;
+  font-size: 14px;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv .qv__info.info .info__btn a {
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 2px;
+  background: #b7b695;
+  color: #fff;
+}
+#colorbox #cboxWrapper #cboxContent #cboxClose {
+  right: 5px;
+  padding: 10px;
+  top: 5px;
+  border-radius: 25%;
+}
+
+.wrap .header {
+  position: relative !important;
+  width: inherit !important;
+  padding: inherit !important;
+  height: inherit !important;
+  background: !important;
+  z-index: inherit !important;
+}
+@keyframes scroll-mv {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -2640px;
+  }
+}
+.wrap .header .header__cont {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  margin: 0 auto;
+  background: url("assets/image/mv.jpg");
+  background-position: center;
+  background-repeat: repeat-x;
+  animation: scroll-mv 120s infinite linear;
+  background-size: cover;
+}
+.wrap .header .header__cont .header__ttl {
+  position: absolute;
+  transform: translateX(-50%);
+  top: 35%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.4em;
+  text-shadow: 1px 1px 3px #000;
+}
+.wrap .header .header__cont .header__ttl--fontSmall {
+  display: block;
+  margin: 20px 0 40px;
+  color: inherit;
+  font-size: 14px;
+  line-height: 30px;
+}
+.wrap .header .header__cont .header__ttl--fontSmall::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 180px;
+  background: #fff;
+  margin: 0 auto 10px;
+}
+.wrap .header .header__cont .header__ttl--upDate {
+  position: absolute;
+  display: block;
+  color: inherit;
+  font-size: 12px;
+  font-family: "Noto Sans Japanese", "メイリオ", Meiryo;
+  bottom: -10px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.wrap .nav {
+  margin: 30px 0 0;
+  border-top: solid 1px #999;
+  border-bottom: solid 1px #999;
+}
+.wrap .nav .nav__items {
+  width: 100%;
+  margin: 0 auto;
+}
+.wrap .nav .nav__items .item {
+  position: relative;
+  float: left;
+  width: 50%;
+  text-align: center;
+  color: #333;
+  font-weight: 400;
+  margin: 0 0 -1px;
+  border-bottom: solid #ccc 3px;
+  display: block;
+  box-sizing: border-box;
+}
+.wrap .nav .nav__items .item:nth-child(2n) {
+  border-left: solid #999 1px;
+}
+.wrap .nav .nav__items .item a {
+  display: block;
+  padding: 13px 0;
+  font-size: 14px;
+  width: 100%;
+}
+.wrap .nav .nav__items .item.active, .wrap .nav .nav__items .item:hover {
+  color: #333;
+  border-bottom: solid #333 3px;
+  font-weight: bold;
+}
+.wrap .nav .nav__items .item.active::after, .wrap .nav .nav__items .item:hover::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border: 3px solid;
+  border-color: #333 #333 transparent transparent;
+  transform: rotate(-45deg) translateX(-50%);
+  bottom: -3px;
+  left: 50%;
+}
+.wrap .nav .nav__items .item.disable {
+  color: #ddd;
+  border-bottom: none;
+  border-bottom: solid #ccc 3px;
+  font-weight: normal;
+}
+.wrap .nav .nav__items .item.disable a {
+  cursor: default;
+}
+.wrap .nav .nav__items .item.disable::after {
+  content: none;
+}
+.wrap .main {
+  padding: 0 0 70px;
+}
+.wrap .main .main__article {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrap .main .main__article.article .article__items .item {
+  display: block;
+  float: left;
+  width: 46%;
+  margin: 4% 2% 0;
+}
+.wrap .main .main__article.article .article__items .item a {
+  position: relative;
+  display: block;
+}
+.wrap .main .main__article.article .article__items .item img {
+  width: 100%;
+}
+.wrap .main .main__article.article .article__items .item .item__txt {
+  margin: 5px 0 0 0;
+  font-size: 10px;
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1em;
+}
+.wrap .main .main__search {
+  position: relative;
+  width: 100%;
+  margin: 70px auto 0;
+}
+.wrap .main .main__search.search {
+  padding: 20px 0;
+}
+.wrap .main .main__search.search .search__items .item {
+  position: relative;
+  display: block;
+  width: 80%;
+  border: solid #333 2px;
+  font-size: 14px;
+  font-weight: bold;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.wrap .main .main__search.search .search__items .item span {
+  display: block;
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.wrap .main .main__search.search .search__items .item a {
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+}
+.wrap .main .main__search.search .search__items .item .item__txt {
+  margin: 7px 0 0 0;
+  font-size: 14px;
+  font-style: italic;
+}
+.wrap .main .main__search.search .search__items .item:nth-child(n + 2) {
+  margin-top: 20px;
+}
+.wrap .main .main__search.search .search__items .item::after {
+  position: absolute;
+  top: 43%;
+  right: 15px;
+  font-family: "FontAwesome";
+  content: "\f054";
+}
+.wrap .main .main__search.search .search__items .item:hover::after {
+  right: 10px;
+}
+.wrap .main .main__bnr {
+  position: relative;
+  width: 100%;
+  margin: 0 auto 0;
+}
+.wrap .main .main__bnr.bnr .bnr__items .item {
+  position: relative;
+  display: block;
+  width: 80%;
+  box-sizing: border-box;
+  margin: 0 auto 0;
+}
+.wrap .main .main__bnr.bnr .bnr__items .item img {
+  width: 100%;
+}

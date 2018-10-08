@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@function getFontSize ($val) {
+	@return $val + rem;
+}
+
+// @function getImgSize ($val) {
+// 	@return calc($val / 2);
+// }

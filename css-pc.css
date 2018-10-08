@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/* ********************************************************************-
+Date:2018-10-08
+SCSS Document:新着アイテム一覧 レイアウトスタイルシート(PC)
+
+ - ******************************************************************** */
+[data-cat$="pc"],
+.pc {
+  display: block !important;
+}
+
+.trace-box {
+  width: 1200px;
+  margin: 7px auto 4px !important;
+}
+.trace-box * {
+  font-size: 12px;
+  color: #222;
+  text-decoration: none;
+}
+
+.sns-width {
+  width: 600px;
+  margin: 50px auto 0;
+}
+
+/* ページ共通 */
+#totop {
+  display: none;
+  width: 60px;
+  height: 60px;
+  background: #b7b695;
+  border-radius: 3px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  opacity: 0.8;
+}
+#totop a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#totop a:visited, #totop a:link {
+  text-decoration: none;
+  color: #fff;
+}
+#totop a i {
+  font-size: 20px;
+  color: #FFF;
+}
+#totop a span {
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #FFF;
+}
+
+#colorbox #cboxWrapper #cboxContent {
+  margin: 0;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent {
+  padding: 30px;
+  background-image: url("assets/image/noise.png"), linear-gradient(to right, rgba(242, 242, 242, 0.1), rgba(242, 242, 242, 0.1));
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv {
+  position: relative;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv .qv__img {
+  margin: 0 0 15px;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv .qv__img.img img {
+  width: 420px;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv .qv__info.info .info__brand {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv .qv__info.info .info__item {
+  margin: 0 0 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv .qv__info.info .info__explain {
+  margin: 0 0 30px;
+  line-height: 1.4em;
+  font-size: 14px;
+}
+#colorbox #cboxWrapper #cboxContent #cboxLoadedContent .qv .qv__info.info .info__btn a {
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 2px;
+  background: #cf4949;
+  color: #fff;
+}
+#colorbox #cboxWrapper #cboxContent #cboxClose {
+  right: 5px;
+  padding: 10px;
+  top: 5px;
+  border-radius: 25%;
+}
+
+.wrap .header {
+  z-index: 1 !important;
+}
+@keyframes scroll-mv {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -2640px;
+  }
+}
+.wrap .header .header__cont {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  margin: 0 auto;
+  background: url("assets/image/mv.jpg");
+  background-position: center;
+  background-repeat: repeat-x;
+  animation: scroll-mv 120s infinite linear;
+}
+.wrap .header .header__cont .header__ttl {
+  position: absolute;
+  transform: translateX(-50%);
+  top: 35%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 44px;
+  line-height: 1.4em;
+  text-shadow: 1px 1px 3px #000;
+}
+.wrap .header .header__cont .header__ttl--fontSmall {
+  display: block;
+  margin: 20px 0 40px;
+  color: inherit;
+  font-size: 28px;
+  line-height: 30px;
+}
+.wrap .header .header__cont .header__ttl--fontSmall::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 300px;
+  background: #fff;
+  margin: 0 auto 20px;
+}
+.wrap .header .header__cont .header__ttl--upDate {
+  display: block;
+  margin: 110px 0 0;
+  color: inherit;
+  font-size: 18px;
+  font-family: "Noto Sans Japanese", "メイリオ", Meiryo;
+}
+.wrap .nav {
+  margin: 80px 0 0;
+  border-top: solid 1px #666;
+  border-bottom: solid 1px #666;
+}
+.wrap .nav .nav__items {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+}
+.wrap .nav .nav__items .item {
+  position: relative;
+  float: left;
+  width: 25%;
+  text-align: center;
+  color: #333;
+  font-weight: 400;
+  margin: 0 0 -1px;
+}
+.wrap .nav .nav__items .item a {
+  display: block;
+  padding: 20px 0;
+}
+.wrap .nav .nav__items .item.active, .wrap .nav .nav__items .item:hover {
+  color: #333;
+  border-bottom: solid #333 4px;
+}
+.wrap .nav .nav__items .item.active::after, .wrap .nav .nav__items .item:hover::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border: 4px solid;
+  border-color: #333 #333 transparent transparent;
+  transform: rotate(-45deg) translateX(-50%);
+  bottom: -3px;
+  left: 50%;
+}
+.wrap .nav .nav__items .item.disable {
+  color: #999;
+  border-bottom: none;
+  font-weight: normal;
+}
+.wrap .nav .nav__items .item.disable a {
+  cursor: default;
+}
+.wrap .nav .nav__items .item.disable::after {
+  content: none;
+}
+.wrap .main {
+  padding: 0 0 100px;
+}
+.wrap .main .main__article {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrap .main .main__article.article .article__items .item {
+  display: block;
+  float: left;
+  width: 380px;
+  margin: 35px 10px 0;
+}
+.wrap .main .main__article.article .article__items .item a {
+  position: relative;
+  display: block;
+}
+.wrap .main .main__article.article .article__items .item a:hover::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 380px;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.wrap .main .main__article.article .article__items .item a:hover::after {
+  content: "VIEW DETAIL";
+  position: absolute;
+  display: block;
+  background: #b7b695;
+  padding: 4px 15px 5px;
+  text-align: center;
+  color: #fff;
+  font-family: "futura_md";
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 1.2em;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.wrap .main .main__article.article .article__items .item img {
+  width: 100%;
+}
+.wrap .main .main__article.article .article__items .item .item__txt {
+  margin: 7px 0 0 0;
+  font-size: 14px;
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wrap .main .main__search {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto 0;
+}
+.wrap .main .main__search.search .search__items .item {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 700px;
+  border: solid #333 2px;
+  font-size: 22px;
+  font-weight: bold;
+  background: #fff;
+  box-sizing: border-box;
+}
+.wrap .main .main__search.search .search__items .item span {
+  display: block;
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.wrap .main .main__search.search .search__items .item a {
+  display: block;
+  padding: 70px 0;
+  text-align: center;
+}
+.wrap .main .main__search.search .search__items .item .item__txt {
+  margin: 7px 0 0 0;
+  font-size: 14px;
+  font-style: italic;
+}
+.wrap .main .main__search.search .search__items .item:nth-child(n + 2) {
+  margin-top: 30px;
+}
+.wrap .main .main__search.search .search__items .item::after {
+  position: absolute;
+  top: 48%;
+  right: 30px;
+  font-family: "FontAwesome";
+  content: "\f054";
+}
+.wrap .main .main__search.search .search__items .item:hover::after {
+  right: 20px;
+}
+.wrap .main .main__bnr {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto 0;
+}
+.wrap .main .main__bnr.bnr .bnr__items .item {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 700px;
+  box-sizing: border-box;
+}
