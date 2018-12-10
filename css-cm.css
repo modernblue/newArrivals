@@ -64,23 +64,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: "ricdim-oblique";
-  src: url("../../../common/lib/font/ricdim-oblique.eot?") format("eot"), url("../../../common/lib/font/ricdim-oblique.woff2") format("woff2"), url("../../../common/lib/font/ricdim-oblique.woff") format("woff");
+  src: url("assets/font/ricdim-oblique.eot?") format("eot"), url("assets/font/ricdim-oblique.woff2") format("woff2"), url("assets/font/ricdim-oblique.woff") format("woff");
 }
 @font-face {
   font-family: "futura_md";
-  src: url("../../../common/lib/font/futura_md.eot?") format("eot"), url("../../../common/lib/font/futura_md.woff2") format("woff2"), url("../../../common/lib/font/futura_md.woff") format("woff");
+  src: url("assets/font/futura_md.eot?") format("eot"), url("assets/font/futura_md.woff2") format("woff2"), url("assets/font/futura_md.woff") format("woff");
+}
+@font-face {
+  font-family: "Din1451Alt";
+  src: url("assets/font/din_1451_alt.eot?") format("eot"), url("assets/font/din_1451_alt.woff2") format("woff2"), url("assets/font/din_1451_alt.woff") format("woff");
 }
 /* common style */
 .wrap, .qv {
   font-size: 16px;
   line-height: 1em;
   color: #333;
-  font-family: "Noto Sans Japanese", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Noto Sans Japanese", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-weight: 200;
   background-image: url("assets/image/noise.png"), linear-gradient(to right, rgba(242, 242, 242, 0.1), rgba(242, 242, 242, 0.1));
 }
 .wrap h1, .wrap h2, .wrap h3, .wrap h4, .wrap h5, .wrap h6, .qv h1, .qv h2, .qv h3, .qv h4, .qv h5, .qv h6 {
-  font-family: "ricdim-oblique";
   font-weight: normal;
   line-height: inherit;
   text-align: inherit;

@@ -25,6 +25,12 @@ SCSS Document:新着アイテム一覧 基本スタイルシート
     url("#{$font-dir}futura_md.woff2") format('woff2'),
     url("#{$font-dir}futura_md.woff")  format('woff');
 }
+@font-face {
+	font-family: "Din1451Alt";
+	src: url("#{$font-dir}din_1451_alt.eot?")  format('eot'),
+		url("#{$font-dir}din_1451_alt.woff2") format('woff2'),
+		url("#{$font-dir}din_1451_alt.woff")  format('woff');
+}
 
 @mixin cf {
 	zoom: 1;
@@ -45,12 +51,12 @@ SCSS Document:新着アイテム一覧 基本スタイルシート
 	font-size: 16px;
     line-height: 1em;
     color: #333;
-    font-family: "Noto Sans Japanese", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Noto Sans Japanese", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-weight: 200;
     background-image: url("assets/image/noise.png"), linear-gradient(to right, rgba(242, 242, 242, 0.1), rgba(242, 242, 242, 0.1));
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: "ricdim-oblique";
+        // font-family: "ricdim-oblique";
     	font-weight: normal;
     	line-height: inherit;
     	text-align: inherit;
