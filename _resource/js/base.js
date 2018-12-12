@@ -202,8 +202,8 @@ $(function(){
 	$.each(itemData.termArr, function(i, value){
 
 		result = $.ajax({
-			url: "../../nais/" + value + '.csv',//本番
-			// url: "../nais/" + value + '.csv',//ローカル
+			// url: "../../nais/" + value + '.csv',//本番
+			url: "../nais/" + value + '.csv',//ローカル
 			cache: false,
 			data: {},
 			async: false
