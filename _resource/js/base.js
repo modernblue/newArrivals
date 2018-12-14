@@ -154,7 +154,7 @@ $(function(){
 				itemData.base_url = "https://item.rakuten.co.jp/mb/";
 				itemData.shop = "rk";
 			} else if (host.indexOf("shopping.geocities.jp") != -1) {
-				itemData.base_url = "https://shopping.geocities.jp/mb-y/";
+				itemData.base_url = "https://store.shopping.yahoo.co.jp/mb-y/";
 				itemData.shop = "yh";
 			} else if (host.indexOf("localhost") != -1) {
 				itemData.base_url = "https://www.modern-blue.com/ec/pro/disp/1/";
@@ -202,8 +202,8 @@ $(function(){
 	$.each(itemData.termArr, function(i, value){
 
 		result = $.ajax({
-			// url: "../../nais/" + value + '.csv',//本番
-			url: "../nais/" + value + '.csv',//ローカル
+			url: "../../nais/" + value + '.csv',//本番
+			// url: "../nais/" + value + '.csv',//ローカル
 			cache: false,
 			data: {},
 			async: false
