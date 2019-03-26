@@ -177,7 +177,7 @@ SCSS Document:新着アイテム一覧 レイアウトスタイルシート(SP)
 }
 .wrap .main__search {
   position: relative;
-  margin: 40px 10px 0;
+  margin: 40px 10px 50px;
   box-sizing: border-box;
 }
 .wrap .main__search.search .search__items .item {
