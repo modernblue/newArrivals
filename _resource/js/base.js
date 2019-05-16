@@ -69,7 +69,7 @@ $(function(){
 					// console.log(i);
 					_self = this;
 					if (_self[0] && _self[0] == 1) {
-						htmlTag += '<li class="item' + ' ' + itemData.getShapedBrandName(_self[10]) + ' ' + itemData.getSexCategory(_self[3]) + '"><a href="' + itemData.getItemPageUrl(_self[6]) + '" target="_blank"><p class="item__image"><img src="' + itemData.getThumbPath(_self[11], 700, 700) + '" class="lazy"></p><p class="item__brand">' + _self[10] + '</p><p class="item__price">&yen; <span>' + itemData.getCompTax(_self[8]) + '</span></p></a></li>';
+						htmlTag += '<li class="item' + ' ' + itemData.getShapedBrandName(_self[10]) + ' ' + itemData.getSexCategory(_self[3]) + '"><a href="' + itemData.getItemPageUrl(_self[6]) + '" target="_blank"><p class="item__image"><img src="' + itemData.getThumbPath(_self[11], 270, 270) + '" class="lazy"></p><p class="item__brand">' + _self[10] + '</p><p class="item__price">&yen; <span>' + itemData.getCompTax(_self[8]) + '</span></p></a></li>';
 					}
 				});
 
