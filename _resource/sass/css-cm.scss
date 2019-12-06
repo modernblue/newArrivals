@@ -6,6 +6,10 @@ SCSS Document:新着アイテム一覧 基本スタイルシート
 
  - ******************************************************************** */
 
+.item__price {
+    display: none !important;
+}
+
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @import url(https://use.fontawesome.com/releases/v5.0.8/css/all.css);
 
